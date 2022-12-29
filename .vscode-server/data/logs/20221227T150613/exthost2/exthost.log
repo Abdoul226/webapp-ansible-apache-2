@@ -1,0 +1,17 @@
+2022-12-27 15:06:41.431 [info] Extension host with pid 3858 started
+2022-12-27 15:06:41.475 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/c2d548dddc6058bd8a646987c8302a31/vscode.lock': Lock acquired.
+2022-12-27 15:06:41.582 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*'
+2022-12-27 15:06:41.671 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2022-12-27 15:06:41.805 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2022-12-27 15:06:41.809 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+2022-12-27 15:06:41.825 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2022-12-27 15:06:41.826 [info] Eager extensions activated
+2022-12-27 15:06:43.717 [info] ExtensionService#_doActivateExtension vscode.git, startup: false, activationEvent: 'api', root cause: vscode.github
+2022-12-27 15:15:30.870 [info] ExtensionService#_doActivateExtension vscode.npm, startup: false, activationEvent: 'onLanguage:properties'
+2022-12-27 15:25:24.603 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:markdown'
+2022-12-27 15:25:24.604 [info] ExtensionService#_doActivateExtension vscode.markdown-language-features, startup: false, activationEvent: 'onLanguage:markdown'
+2022-12-27 15:25:27.122 [info] ExtensionService#_doActivateExtension vscode.markdown-math, startup: false, activationEvent: 'api', root cause: vscode.markdown-language-features
+2022-12-27 16:34:38.862 [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+2022-12-28 12:57:55.623 [info] Extension host terminating: renderer disconnected for too long (1)
+2022-12-28 12:57:55.713 [info] Lock '/home/vagrant/.vscode-server/data/User/workspaceStorage/c2d548dddc6058bd8a646987c8302a31/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2022-12-28 12:57:57.177 [info] Extension host with pid 3858 exiting with code 0

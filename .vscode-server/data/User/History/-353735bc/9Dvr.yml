@@ -1,0 +1,21 @@
+---
+# tasks file for /home/vagrant/ansible_dir/roles/inst_apache
+
+# Les variables sont dans le fichier defaults
+- name: install httpd
+  ansible.builtin.yum:
+    name: "{{ apache_httpd.pkg }}"
+    state: latest
+
+- name: start & enabled httpd
+  service:
+    name: "{{ apache_httpd.service }}"
+    state: started
+    enabled: yes
+
+- name: copy index.html
+  copy:
+    src: index.html
+    dest: /var/www/html/
+  notify:  # El ajouter
+  - restart apache

@@ -1,0 +1,13 @@
+[Trace 15:25:26.555] VsCodeClientWorkspace: TextDocument.onDidOpen: file:///home/vagrant/ansible_dir/hosts
+[Trace 15:25:26.558] VsCodeClientWorkspace: TextDocument.onDidChanceContent: file:///home/vagrant/ansible_dir/hosts
+[Trace 15:25:26.642] Server: connection.languages.diagnostics.on: file:///home/vagrant/ansible_dir/hosts
+[Trace 15:25:26.643] DocumentSymbolProvider: provideDocumentSymbols — file:///home/vagrant/ansible_dir/hosts 1
+[Debug 15:25:26.643] LinkProvider: compute - file:///home/vagrant/ansible_dir/hosts
+[Trace 15:25:26.665] Server: connection.languages.diagnostics.on: file:///home/vagrant/ansible_dir/hosts
+[Debug 15:25:27.173] MdFoldingProvider: provideFoldingRanges — file:///home/vagrant/ansible_dir/hosts 1
+[Debug 15:25:27.173] TableOfContentsProvider: create - file:///home/vagrant/ansible_dir/hosts
+[Trace 15:25:31.551] Server: connection.languages.diagnostics.on: file:///home/vagrant/ansible_dir/hosts
+[Trace 16:44:53.831] VsCodeClientWorkspace: onDidChangeWatchedFiles: 2: file:///home/vagrant/ansible_dir/roles/inst_apache/README.md
+[Trace 16:45:39.023] Server: connection.languages.diagnostics.on: file:///home/vagrant/ansible_dir/hosts
+[Trace 16:45:39.033] VsCodeClientWorkspace: TextDocument.onDidClose: file:///home/vagrant/ansible_dir/hosts
+[Trace 16:45:39.038] VsCodeClientWorkspace: deleteDocument: file:///home/vagrant/ansible_dir/hosts

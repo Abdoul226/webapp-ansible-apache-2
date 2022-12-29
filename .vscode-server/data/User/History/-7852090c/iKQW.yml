@@ -1,0 +1,17 @@
+---
+
+- name: deploy httpd server
+  hosts: all
+  become: yes
+  roles:
+    - inst_apache
+    
+  
+
+
+#ansible-playbook -i /home/vagrant/ansible_dir/inventory.yml /home/vagrant/ansible_dir/my_playbook.yml
+
+
+
+#Pour supprimer httpd (apache)
+#sudo yum remove httpd

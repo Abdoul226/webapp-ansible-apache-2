@@ -1,0 +1,5 @@
+- name: Arrêt du service tomcat
+  hosts: all
+  become: yes
+  roles:
+    - stop_tomcat

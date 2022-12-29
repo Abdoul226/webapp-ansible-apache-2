@@ -1,0 +1,5 @@
+---
+- hosts: localhost
+  remote_user: root
+  roles:
+    - /home/vagrant/ansible_dir/roles/stop_tomcat

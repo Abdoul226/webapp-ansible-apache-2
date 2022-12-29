@@ -1,0 +1,18 @@
+---
+# tasks file for /home/vagrant/ansible_dir/roles/inst_apache
+
+- name: install httpd
+    ansible.builtin.yum:
+      name: httpd
+      state: latest
+
+  - name: start & enabled httpd
+    service:
+      name: httpd
+      state: started
+      enabled: yes
+
+  - name: copy index.html
+    copy:
+      src: index.html
+      dest: /var/www/html/

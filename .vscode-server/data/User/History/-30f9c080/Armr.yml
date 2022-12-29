@@ -1,0 +1,12 @@
+---
+all:
+  children:
+    server1:
+      hosts:
+        client1:
+        #192.168.99.11
+    server2:
+      hosts:
+        client2:
+        192.168.99.12
+...

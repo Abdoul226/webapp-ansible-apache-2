@@ -1,0 +1,8 @@
+---
+# tasks file for /home/vagrant/ansible_dir/roles/stop_tomcat
+
+- name: stop Tomcat
+  service:
+    name: tomcat
+    state: stopped
+#    enabled: no

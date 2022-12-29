@@ -1,0 +1,5 @@
+---
+# defaults file for /home/vagrant/ansible_dir/roles/inst_apache
+
+web_server: httpd
+service_apache: httpd

@@ -1,0 +1,8 @@
+---
+# handlers file for /home/vagrant/ansible_dir/roles/inst_apache
+
+- name: restart apache
+  service:
+    name: httpd
+    state: restarted
+  
