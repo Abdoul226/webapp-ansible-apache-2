@@ -1,0 +1,17 @@
+---
+
+- name: Modification du fichier /etc/issue
+  hosts: all
+  become: true
+  tasks:
+    - name: Modification sur le groupe dev
+      copy:
+        content: "Development\n"
+        dest: /etc/issue
+      when: inventory_hostname in groups['dev']
+
+    - name: Modification sur le groupe prod
+      copy:
+        content: "Production\n"
+        dest: /etc/issue
+      when: inventory_hostname in groups['prod']

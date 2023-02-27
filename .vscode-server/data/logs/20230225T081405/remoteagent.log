@@ -1,0 +1,10 @@
+2023-02-25 08:14:06.491 [info] Extension host agent started.
+2023-02-25 08:14:07.860 [error] [127.0.0.1][bc2663d7][ManagementConnection] Unknown reconnection token (never seen).
+2023-02-25 08:14:12.333 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-25 08:14:19.708 [info] [127.0.0.1][fd26e5f2][ManagementConnection] New connection established.
+2023-02-25 08:14:19.729 [info] [127.0.0.1][3b9a1f6d][ExtensionHostConnection] New connection established.
+2023-02-25 08:14:19.780 [info] [127.0.0.1][3b9a1f6d][ExtensionHostConnection] <6549> Launched Extension Host Process.
+2023-02-27 06:52:26.111 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-27 10:08:44.360 [info] [127.0.0.1][3b9a1f6d][ExtensionHostConnection] <6549> Extension Host Process exited with code: 0, signal: null.
+2023-02-27 10:08:44.386 [info] Last EH closed, waiting before shutting down
+2023-02-27 10:13:44.401 [info] Last EH closed, shutting down

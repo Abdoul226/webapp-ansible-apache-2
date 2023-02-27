@@ -1,0 +1,5 @@
+---
+- name: install httpd
+  ansible.builtin.yum:
+    name: "{{ apache_httpd.pkg }}"
+    state: latest

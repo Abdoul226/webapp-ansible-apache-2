@@ -1,0 +1,7 @@
+---
+
+- name: start & enabled httpd
+  service:
+    name: "{{ apache_httpd.service }}"
+    state: started
+    enabled: yes

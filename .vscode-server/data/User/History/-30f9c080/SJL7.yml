@@ -1,0 +1,13 @@
+---
+
+all:
+  children:
+    prod:
+      hosts:
+        client1:
+        #192.168.99.11
+    staging:
+      hosts:
+        client2:
+        #192.168.99.12
+...

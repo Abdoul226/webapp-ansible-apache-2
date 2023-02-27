@@ -1,0 +1,13 @@
+---
+
+- name: Selection de demon
+  host: all
+  gather_facts: true
+  tasks:
+    - name: all features
+      ansiblebuiltin.debug:
+        var: 'ansible_facts.eth1.features'
+
+    - name: filter enabled
+      ansible.buitin.debug:
+        msg: "{{ (ansible_facts.eth1.features | dict2items | selectattr('value', 'match', 'on')) }}"

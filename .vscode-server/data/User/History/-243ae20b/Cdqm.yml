@@ -1,0 +1,36 @@
+---
+
+- name: Création de users sur le groupe dev
+  become: true
+  hosts: dev
+  tasks:
+    - name: création de toto
+      user:
+        name: toto
+        state: present
+        uid: 30001
+        groups: opsmgr
+        append: yes
+        password: "{{ 'pw_dev' | password_hash('sha512') }}"
+    
+    - name: création de titi
+      user:
+        name: titi
+        state: present
+        uid: 30002
+        groups: opsmgr
+        append: yes
+        password: "{{ 'pw_dev' | password_hash('sha512') }}"
+
+- name: Création de users sur le groupe prod
+  become: true
+  hosts: prod
+  tasks:
+    - name: création de tutu
+      user:
+        name: tutu
+        state: present
+        uid: 30003
+        groups: opsmgr
+        append: yes
+        password: "{{ 'pw_mgr' | password_hash('sha512') }}"

@@ -1,0 +1,32 @@
+---
+# tasks file for apache
+
+
+- name: installation de httpd et de firewalld
+  ansible.builtin.yum:
+    name: 
+      - httpd
+      - firewalld
+    state: latest
+
+- name: start & enabled httpd and firewalld
+  service:
+    name:
+      - httpd
+      - firewalld
+    state: started
+    enabled: true
+
+- name: Configuration du service firewall 
+  firewalld:
+    service: http
+    permanent: true
+    state: enabled
+    immediate: yes
+
+- name: copy index.html
+  copy:
+    src: index.html.j2
+    dest: /var/www/html/
+  notify:  
+  - restart apache

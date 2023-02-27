@@ -1,0 +1,10 @@
+users:
+  - username: toto
+    job: developer
+    uid: 30001
+  - username: titi
+    job: developer
+    uid: 30002
+  - username: tutu
+    job: manager
+    uid: 30003

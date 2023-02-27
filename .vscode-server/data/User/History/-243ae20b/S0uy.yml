@@ -1,0 +1,46 @@
+---
+- name: Création de users sur le groupe prod
+  become: true
+  hosts: dev
+  vars_files: 
+    - user_pw.yml
+    - userlist.yml
+  tasks:
+    - name: "create group" 
+      group:
+        name: devops  
+      
+    - name: "create user when Job=developer from userlist.yml file with password from secret.yml file and add to secondary group 'dev' "
+      user: 
+        name: "{{ item['username'] }}"
+        state: present
+        uid: "{{ item['uid'] }}"
+        password: "{{ pw_dev | password_hash('sha512')  }}"   
+        update_password: on_create 
+        groups: devops
+        append: yes
+      loop: "{{ users }}"
+      when: "item['job'] == 'developer'"
+
+- name: Création de users sur le groupe prod
+  become: true
+  hosts: prod
+  vars_files: 
+    - secret.txt
+    - userlist.yml
+  tasks:
+    - name: create group 
+      group:
+        name: opsmgr  
+   
+    - name: "create user when Job=devops from userlist.yml file with password from secret.yml file and add to secondary group 'devops' "
+      user:
+        name: "{{ item['username']  }}"
+        state: present
+        uid: "{{ item['uid'] }}"
+        password: "{{ pw_mgr | password_hash('sha512')  }}"
+        update_password: on_create
+        groups: opsmgr
+        append: yes
+      loop: "{{ users }}"
+      when: "item['job'] == 'manager'"

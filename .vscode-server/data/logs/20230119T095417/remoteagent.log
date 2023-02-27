@@ -1,0 +1,34 @@
+2023-01-19 09:54:17.483 [info] Extension host agent started.
+2023-01-19 09:54:17.922 [info] [127.0.0.1][9a48e262][ExtensionHostConnection] New connection established.
+2023-01-19 09:54:17.923 [info] [127.0.0.1][c36be40f][ManagementConnection] New connection established.
+2023-01-19 09:54:18.032 [info] [127.0.0.1][9a48e262][ExtensionHostConnection] <1518> Launched Extension Host Process.
+2023-01-19 09:55:22.398 [info] [127.0.0.1][c36be40f][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2023-01-19 09:55:22.412 [info] [127.0.0.1][9a48e262][ExtensionHostConnection] <1518> Extension Host Process exited with code: 0, signal: null.
+2023-01-19 09:55:22.413 [info] Last EH closed, waiting before shutting down
+2023-01-19 09:55:30.858 [info] Got delay-shutdown request while in shutdown timeout, delaying
+2023-01-19 09:55:30.858 [info] Cancelling previous shutdown timeout
+2023-01-19 09:55:31.013 [info] [127.0.0.1][27d2cc2b][ManagementConnection] New connection established.
+2023-01-19 09:55:31.016 [info] [127.0.0.1][28e70bcd][ExtensionHostConnection] New connection established.
+2023-01-19 09:55:31.051 [info] [127.0.0.1][28e70bcd][ExtensionHostConnection] <1666> Launched Extension Host Process.
+2023-01-19 09:55:33.785 [error] CodeExpectedError: Could not find pty on pty host
+    at h.J (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:27:6395)
+    at h.updateTitle (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:27:2665)
+    at Object.call (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:17:5110)
+    at r.q (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:5390)
+    at r.p (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:4881)
+    at /home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:4286
+    at n.invoke (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at C.deliver (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:2038)
+    at v.fire (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:1676)
+    at process.O (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:9:20886)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-01-19 10:00:30.854 [info] New EH opened, aborting shutdown
+2023-01-19 12:00:26.707 [warning] No ptyHost heartbeat after 6 seconds
+2023-01-19 12:38:44.029 [warning] No ptyHost heartbeat after 6 seconds
+2023-01-19 12:38:55.605 [warning] No ptyHost heartbeat after 6 seconds
+2023-01-19 14:29:27.941 [warning] No ptyHost heartbeat after 6 seconds
+2023-01-19 15:56:21.298 [info] [127.0.0.1][28e70bcd][ExtensionHostConnection] <1666> Extension Host Process exited with code: 0, signal: null.
+2023-01-19 15:56:21.299 [info] Last EH closed, waiting before shutting down
+2023-01-19 16:01:21.293 [info] Last EH closed, shutting down

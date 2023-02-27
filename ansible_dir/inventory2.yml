@@ -1,0 +1,11 @@
+---
+
+all:
+  children:
+    dev:
+      hosts:
+        client1:
+    prod:
+      hosts:
+        client2:
+...

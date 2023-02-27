@@ -1,0 +1,37 @@
+---
+- name: hwreport
+  become: true
+  hosts: all
+  ignore_errors: yes
+  tasks:
+  - name: Copie du fichier
+    copy:
+      src: /home/vagrant/ansible_dir/hw_report_file.txt
+      dest: /root/repport_hardware.txt
+
+  - name: modification
+    ansible.builtin.lineinfile:
+    path: /root/repport_hardware.txt
+    regexp: '^HOST='
+    line: HOST="{{ ansible_hostname | default('NONE') }}"
+
+  - name: Collect report 1
+    set_fact:
+      HOSTNAME: "{{ ansible_hostname }}"
+      MEMORY: "{{ ansible_memtotal_mb  }}"
+      BIOS: "{{ ansible_bios_version }}"
+      #VDA_SIZE: "{{ ansible_devices['vda']['size'] }}"
+      #VDB_SIZE: "{{ ansible_devices['vdb']['size'] }}"
+      SDA1_SIZE: "{{ ansible_devices['sda']['partitions']['sda1']['size'] }}"
+      SDA2_SIZE: "{{ ansible_devices['sda']['partitions']['sda2']['size'] }}"
+  - name: Copy the content to the managed node
+    copy:
+      content:  |
+        HOST={{ HOSTNAME | default('NONE') }}
+        BIOS={{ BIOS  | default('NONE') }}
+        MEMORY_TOTAL_MB={{ MEMORY | default('NONE') }}
+        VDA_SIZE={{ VDA_SIZE | default('NONE') }}
+        VDB_SIZE={{ VDB_SIZE | default('NONE') }}
+        SDA1_SIZE={{ SDA1_SIZE | default('NONE') }}
+        SDA2_SIZE={{ SDA2_SIZE | default('NONE') }}
+      dest: /root/repport_hardware.txt

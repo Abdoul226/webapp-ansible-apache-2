@@ -1,0 +1,41 @@
+2023-02-08 13:38:23.890 [info] Extension host agent started.
+2023-02-08 13:38:24.195 [info] [127.0.0.1][5b3dfe40][ExtensionHostConnection] New connection established.
+2023-02-08 13:38:24.196 [info] [127.0.0.1][7be613f0][ManagementConnection] New connection established.
+2023-02-08 13:38:24.356 [info] [127.0.0.1][5b3dfe40][ExtensionHostConnection] <1476> Launched Extension Host Process.
+2023-02-08 13:38:29.093 [error] CodeExpectedError: Could not find pty on pty host
+    at h.J (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:27:6395)
+    at h.updateIcon (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:27:2715)
+    at Object.call (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:17:5110)
+    at r.q (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:5390)
+    at r.p (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:4881)
+    at /home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:15:4286
+    at n.invoke (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:145)
+    at C.deliver (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:2038)
+    at v.fire (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:11:1676)
+    at process.O (/home/vagrant/.vscode-server/bin/97dec172d3256f8ca4bfb2143f3f76b503ca0534/out/vs/platform/terminal/node/ptyHostMain.js:9:20886)
+    at process.emit (node:events:526:28)
+    at emit (node:internal/child_process:938:14)
+    at processTicksAndRejections (node:internal/process/task_queues:84:21)
+2023-02-08 13:40:33.813 [error] Error: connect ETIMEDOUT 13.78.111.198:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1157:16)
+2023-02-08 14:44:17.011 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-08 16:28:44.178 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-08 19:11:36.377 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-08 19:11:53.224 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-09 07:16:49.778 [info] [127.0.0.1][be2d710e][ManagementConnection] New connection established.
+2023-02-09 07:16:49.804 [info] [127.0.0.1][84d90ff6][ExtensionHostConnection] New connection established.
+2023-02-09 07:16:49.902 [info] [127.0.0.1][84d90ff6][ExtensionHostConnection] <1950> Launched Extension Host Process.
+2023-02-09 07:21:50.648 [info] [127.0.0.1][5b3dfe40][ExtensionHostConnection] <1476> Extension Host Process exited with code: 0, signal: null.
+2023-02-09 12:29:59.782 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-09 13:13:41.911 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-09 18:42:22.138 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-09 18:42:39.337 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-10 09:04:28.410 [info] [127.0.0.1][1828c59a][ManagementConnection] New connection established.
+2023-02-10 09:04:28.419 [info] [127.0.0.1][e5772ebd][ExtensionHostConnection] New connection established.
+2023-02-10 09:04:28.553 [info] [127.0.0.1][e5772ebd][ExtensionHostConnection] <25232> Launched Extension Host Process.
+2023-02-10 09:09:29.165 [info] [127.0.0.1][84d90ff6][ExtensionHostConnection] <1950> Extension Host Process exited with code: 0, signal: null.
+2023-02-10 11:34:51.701 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-10 12:07:33.135 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-10 16:10:19.912 [info] [127.0.0.1][e5772ebd][ExtensionHostConnection] <25232> Extension Host Process exited with code: 0, signal: null.
+2023-02-10 16:10:19.914 [info] Last EH closed, waiting before shutting down
+2023-02-10 16:15:19.916 [info] Last EH closed, shutting down

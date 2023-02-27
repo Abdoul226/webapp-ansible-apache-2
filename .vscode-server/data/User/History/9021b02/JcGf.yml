@@ -1,0 +1,7 @@
+---
+# vars file for inst_pkg
+
+vars:
+  supported_distros:
+    - RedHat
+    - CentOS

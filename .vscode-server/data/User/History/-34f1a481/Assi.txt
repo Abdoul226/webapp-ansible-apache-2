@@ -1,0 +1,5 @@
+HOST=inventory_hostname
+BIOS= bios_version
+MEMORY_TOTAL_MB=memory total mb
+VDA_SIZE=vda disk size
+VDB_SIZE=vdb disk size

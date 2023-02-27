@@ -1,0 +1,39 @@
+---
+# tasks file for /home/vagrant/ansible_dir/roles/inst_tomcat
+
+#- name: Install Java
+#  yum:
+#    name: java-1.8.0-openjdk
+#    state: present
+
+#- name: Install Tomcat
+#  yum:
+#    name: tomcat
+#    state: present
+
+#***************************************
+# Version contractée des précedentes tasks 
+#*****************************************
+#- name: Install Java & Tomcat
+#  yum:
+#    name: "{{ item }}"
+#    state: present
+#  loop:
+#    - java-1.8.0-openjdk
+#    - tomcat
+#******************************************
+
+- name: Install Java & Tomcat
+  yum:
+    name: 
+      - "{{ jdk_pkg }}"
+      - "{{ tomcat_pkg }}"
+    state: present
+
+
+- name: Start Tomcat
+  service:
+    name: tomcat
+    state: started
+    enabled: true
+

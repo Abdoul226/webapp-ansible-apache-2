@@ -1,0 +1,9 @@
+2023-02-13 08:01:07.159 [info] Extension host agent started.
+2023-02-13 08:01:07.538 [info] [127.0.0.1][52c8c395][ExtensionHostConnection] New connection established.
+2023-02-13 08:01:07.540 [info] [127.0.0.1][200523e0][ManagementConnection] New connection established.
+2023-02-13 08:01:07.770 [info] [127.0.0.1][52c8c395][ExtensionHostConnection] <28447> Launched Extension Host Process.
+2023-02-13 11:35:36.581 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-13 11:35:51.768 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-13 16:11:00.588 [info] [127.0.0.1][52c8c395][ExtensionHostConnection] <28447> Extension Host Process exited with code: 0, signal: null.
+2023-02-13 16:11:00.588 [info] Last EH closed, waiting before shutting down
+2023-02-13 16:16:00.583 [info] Last EH closed, shutting down

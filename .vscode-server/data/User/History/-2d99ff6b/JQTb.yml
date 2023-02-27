@@ -1,0 +1,14 @@
+---
+# tasks file for fact_ansi
+- name: Prints various Ansible facts
+  ansible.builtin.debug:
+    msg: >
+      The default IPv4 address of {{ ansible_facts.fqdn }}
+      is {{ ansible_facts.default_ipv4.address }} 
+      and distribution is {{ ansible_facts['distribution'] }}
+      version is {{ ansible_facts['distribution_version'] }}       
+      the {{ ansible_hostname }}
+      the {{ ansible_interfaces }}
+      the {{ ansible_dns['nameservers'] }}
+      and {{ ansible_kernel }}
+  

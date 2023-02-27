@@ -1,0 +1,30 @@
+---
+
+- name: selectattr demon
+  hosts: all
+  gather_facts: true
+  tasks:
+    - name: first print interfaces
+      debug:
+        msg: "{{ ansible_interfaces }}"
+
+    - name: second print interfaces
+      debug:
+        msg: "{{ ansible_interfaces | select('match', '^(eth|enp0s)[0-9]+') | list }}"
+
+    - name: upper print interfaces
+      debug:
+        msg: "{{ ansible_interfaces | map('upper') | list }}"
+
+    - name: Display all server names
+      ansible.builtin.debug:
+        var: item
+      loop: "{{ domain_definition | community.general.json_query('domain.server[*].name') }}"
+
+    - name: all features
+      ansible.builtin.debug:
+        var: 'ansible_facts.enp0s3.features'
+
+    - name: filter enabled
+      ansible.builtin.debug:
+        msg: "{{ (ansible_facts.enp0s3.features | dict2items | selectattr('value', 'match', 'on')) }}"

@@ -1,0 +1,6 @@
+---
+# defaults file for /home/vagrant/ansible_dir/roles/inst_tomcat
+
+vars:
+  - jdk_pkg: java-1.8.0-openjdk
+  - tomcat_pkg: tomcat

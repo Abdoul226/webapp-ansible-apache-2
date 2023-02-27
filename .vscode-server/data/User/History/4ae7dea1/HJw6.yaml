@@ -1,0 +1,5 @@
+---
+
+plugin: nmap
+strict: false
+address: 192.168.99.0/24

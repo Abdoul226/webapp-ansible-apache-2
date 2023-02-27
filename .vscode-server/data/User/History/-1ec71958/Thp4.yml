@@ -1,0 +1,40 @@
+---
+# tasks file for inst_pkg
+
+---
+- name: Demonstrate the "in" keyword
+  hosts: all
+  gather_facts: yes
+  vars:
+    supported_distros:
+      - RedHat
+      - centos
+  tasks:
+    - name: Install httpd using dnf, where supported
+      ansible.builtin.dnf:
+        name:
+          - firewalld
+          - mariadb-server
+          - php
+          - php-mysqlnd
+        state: present
+      when: ansible_facts['distribution'] in supported_distros
+    
+    - name: Firewall enabled and running
+      ansible.builtin.service:
+        name: firewalld
+        enabled: true
+        state: started
+
+    - name: Firewall permits access to httpd service
+      ansible.posix.firewalld:
+        service: http
+        permanent: true
+        state: enabled
+        immediate: yes
+
+    - name: mariadb enabled and running
+      ansible.builtin.service:
+        name: mariadb
+        enabled: true
+        state: started

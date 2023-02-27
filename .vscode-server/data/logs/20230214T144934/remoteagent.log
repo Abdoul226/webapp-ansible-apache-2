@@ -1,0 +1,15 @@
+2023-02-14 14:49:34.540 [info] Extension host agent started.
+2023-02-14 14:49:34.778 [info] [127.0.0.1][2c74e873][ManagementConnection] New connection established.
+2023-02-14 14:49:34.779 [info] [127.0.0.1][111aedc0][ExtensionHostConnection] New connection established.
+2023-02-14 14:49:35.126 [info] [127.0.0.1][111aedc0][ExtensionHostConnection] <8730> Launched Extension Host Process.
+2023-02-14 17:38:52.013 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-14 17:39:04.303 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 08:54:38.132 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 09:08:22.698 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 09:35:36.125 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 11:22:00.788 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 11:22:19.585 [warning] No ptyHost heartbeat after 6 seconds
+2023-02-15 12:31:01.200 [info] [127.0.0.1][59c3cd3e][ManagementConnection] New connection established.
+2023-02-15 12:31:01.201 [info] [127.0.0.1][9e47a775][ExtensionHostConnection] New connection established.
+2023-02-15 12:31:01.232 [info] [127.0.0.1][9e47a775][ExtensionHostConnection] <9332> Launched Extension Host Process.
+2023-02-15 12:36:01.802 [info] [127.0.0.1][111aedc0][ExtensionHostConnection] <8730> Extension Host Process exited with code: 0, signal: null.

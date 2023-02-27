@@ -1,0 +1,6 @@
+---
+
+- name: Création de users sur le groupe dev
+  become: true
+  hosts: dev
+  tasks:

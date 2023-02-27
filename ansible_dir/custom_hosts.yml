@@ -1,0 +1,10 @@
+---
+- name: Collect the all node information
+  become: true 
+  hosts: all
+  tasks:
+  - name: copy the template to the managed node
+    template:
+      src: hosts.j2
+      dest: /etc/hosts.ori  
+    when: inventory_hostname in groups['dev']

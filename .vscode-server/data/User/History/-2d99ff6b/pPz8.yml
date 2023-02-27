@@ -1,0 +1,14 @@
+---
+# tasks file for fact_ansi
+- name: Prints various Ansible facts
+  ansible.builtin.debug:
+    msg: 
+      - Les caractéristiques de la machine the {{ ansible_hostname }} sont les suivantes:\\n
+      - le nom de domaine conplet {{ ansible_facts.fqdn }} \\n
+      - l'adress IPv4 principale {{ ansible_facts.default_ipv4.address }} \\n 
+      - la distribution {{ ansible_facts['distribution'] }}\\n
+      - version {{ ansible_facts['distribution_version'] }} \\n       
+      - la liste des interfaces réseau {{ ansible_interfaces }} \\n
+      - la liste des serveurs DNS {{ ansible_dns['nameservers'] }} \\n
+      - la version du noyau {{ ansible_kernel }}
+  

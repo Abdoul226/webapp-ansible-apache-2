@@ -1,0 +1,22 @@
+---
+
+- name: Installation 1
+  become: true
+  hosts: all
+  tasks:
+    - name: Installation du paquet nano
+      ansible.builtin.yum:
+        name: nano
+        state: present
+
+- name: Installation 2
+  hosts: dev
+  tasks:
+    - name: Installation du paquet tree
+      ansible.builtin.yum:
+        name: tree
+        state: present
+    - name: mise à jour des paquets sur les servers de dev
+      ansible.builtin.yum:
+        name: "*"
+        state: latest
